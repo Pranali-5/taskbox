@@ -15,6 +15,7 @@ export const MockedState = {
     { ...TaskStories.Default.args.task, id: '4', title: 'Task 4' },
     { ...TaskStories.Default.args.task, id: '5', title: 'Task 5' },
     { ...TaskStories.Default.args.task, id: '6', title: 'Task 6' },
+    { ...TaskStories.Default.args.task, id: '7', title: 'Task 7' },
   ],
   status: 'idle',
   error: null,
@@ -63,8 +64,8 @@ export const WithPinnedTasks = {
   decorators: [
     (story) => {
       const pinnedtasks = [
-        ...MockedState.tasks.slice(0, 5),
-        { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },
+        ...MockedState.tasks.slice(0, 6),
+        { id: '7', title: 'Task 7 (pinned)', state: 'TASK_PINNED' },
       ];
 
       return (
