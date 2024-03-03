@@ -46,6 +46,8 @@ export default function TaskList() {
         {LoadingRow}
         {LoadingRow}
         {LoadingRow}
+        {LoadingRow}
+        {LoadingRow}
       </div>
     );
   }
